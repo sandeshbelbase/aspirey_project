@@ -1,0 +1,484 @@
+// work sans font
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;600;700;800&display=swap');
+
+// inter font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@100;300;400;600;700;800&display=swap');
+
+// variables
+$primaryColor :#2F2661;
+$redColor : #FE0000;
+$btncolor:#006EB8;
+$blackColor: #222222;
+$paragraphColor: #655D5D;
+
+// font variables
+$fontSans:'Work Sans', sans-serif;
+$fontInter: 'Inter', sans-serif;
+// global scss
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+
+// header scss
+
+header{
+    padding: 20px 0px;
+    .social{
+        display: flex;
+        align-items: center;
+        column-gap: 22px;
+        height: 100%;
+        svg{
+            font-size: 22px;
+            color: #4267B2;
+            &:hover{
+                color: $redColor;
+            }
+        }
+    }
+    .logo{
+        img{
+            width: 80% !important;
+        }
+    }
+    .menuWrapper{
+       display: flex;
+       align-items: center;
+        margin: 20px 0px;
+        background-color: #463B82;
+        font-family: $fontSans;
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            // padding: 10px 0px 8px 0px;
+        }
+    
+        .search{
+            padding: 2px;
+            border-bottom: 1px solid #EEF8FF;
+            input{
+                background: none;
+                border: none;
+                outline: none;
+                color: #EEF8FF;
+                &::placeholder{
+                    color: #EEF8FF;
+                }
+            }
+            svg{
+                font-size: 18px;
+                color: #EEF8FF
+                ;
+            }
+        }
+    }
+}
+// menu for both footer and header
+.menu{
+    font-family: $fontSans;
+    ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        column-gap: 36px;
+        // align-items: center;
+        li{
+            a{
+                font-weight: 500;
+                line-height: 3;
+                color: #EEF8FF;                font-size: 16px;
+                &:hover{
+                    transition: 0.5s ease-in-out;
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
+footer{
+    padding: 30px 0px;
+    background-color: #4152A5;
+    a{
+        color: #ffffff;
+    }
+    .footer-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   }
+    .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 70%;
+    }
+   }
+
+   .footerContent{
+    color: #ffffff;
+    border-top: 1px solid #39739E;
+    padding-top: 10px;
+    font-family: $fontInter;
+        a{
+            color: #fff;
+            &:hover{
+                color: #a9adaf;
+                transition: 0.5s ease;
+            }
+        }
+    h3{
+        width: 100%;
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .usefulLinks{
+        height: 100%;
+        border-right: 1px solid #39739E;
+        border-left: 1px solid #39739E;
+        padding-left: 40px;
+       ul{
+        display: flex;
+        flex-direction: column;
+        li a{
+            font-size: 16px;
+            margin: 5px 0px;
+            line-height: 1.8;
+        }
+       }
+    }
+    .latest{
+        a{
+            display: block;
+            font-size: 16px;
+            padding: 7px 0px;
+           
+        }
+    }
+   
+   }
+   
+}
+
+// homepage css
+.mainWrapper{
+    font-family: $fontInter;
+    a{
+        color: $blackColor;
+        &:hover{
+            color: $redColor !important;
+        }
+    }
+    h3 a{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
+    p{
+        padding: 8px 0px;
+        color: $blackColor;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+    }
+  
+    
+    .subPost{
+        margin-top: 20px;
+        padding: 20px 0px;
+        border-top: 1px solid #EAEAEA;
+        a{
+            text-align: justify;
+            color: $blackColor;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 25px;
+        }
+        img{
+            padding: 10px 0px;
+
+        }
+        
+    }
+}
+
+// recent css
+.recent{
+    padding: 20px 0px 20px 20px;
+    border-left: 1px solid rgba(171, 184, 192, 0.18);
+    box-shadow: 0px 22px 20px -20px rgba(171, 184, 192, 0.71);
+    font-family: $fontInter;
+    h3{
+        padding-bottom: 10px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 34px;
+        color: #222222;
+    }
+    .post{
+        padding: 16px 0px;
+        border-top: 1px dashed rgba(170, 187, 187, 0.4);
+        h6{
+            text-align: justify;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        h7{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+       
+
+    }
+}
+
+// ad css
+
+.long-ad{
+    margin: 30px 0px;
+}
+
+.title{
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    .titleContent{
+        color: #2F2661;
+        font-family: $fontInter;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        white-space: nowrap;
+    }
+    .shape{
+        width: 100%;
+        // display: flex;
+        // flex-direction: column;
+    }
+    .shape1{
+        height: 2px;
+        margin: 2px 0px;
+        background-color: #2F2661;
+    }
+  
+}
+
+// common css for button hover
+button{
+    width: 100%;
+    background-color: #006EB8;
+    border: 1px solid #006EB8;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+    outline: none;
+    color: #ffffff;
+    padding: 10px;
+    &:hover{
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.5s ease;
+        color: $redColor;
+        border: 1px solid #006EB8;
+        background-color: #ffffff;
+    }
+}
+
+
+// education news
+.educationnews{
+    a{
+        color: $blackColor;
+        &:hover{
+            color: $redColor;
+            transition: 0.5s ease;
+        }
+    }
+   
+    .smallPost{
+        margin-bottom: 28px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        h7{
+            
+            padding: 10px;
+            display: block;
+            color: $blackColor;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}
+
+// common meta css
+.meta{
+    display: flex;
+    column-gap: 26px;
+    color: $blackColor;
+    font-size: 14px;
+    font-weight: 400;
+    svg{
+        margin-right: 8px;
+    }
+   }
+
+//    common css for card
+
+.pstImg{
+    border-radius: 5px;
+    position: relative;
+    
+   #bgImg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+   }
+   .imgContent{
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    left: 10%;
+    z-index: 2;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 25px;
+    a{
+        color: #ffffff;
+        &:hover{
+            color: $redColor;
+        }
+    }
+   .meta{
+    display: flex;
+    column-gap: 26px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    svg{
+        margin-right: 8px;
+    }
+   }
+}
+}
+
+// education blog scss
+.educationBlog{
+    background: rgba(19, 84, 135, 0.1);
+    font-family: $fontInter;
+    padding: 40px 0px;
+    a{
+    padding: 10px 0px;
+       color: $blackColor; 
+        &:hover{
+            transition: 0.5s ease;
+            color: $redColor;
+        }
+    }
+    h4{
+    margin: 0px;
+    padding: 10px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    }
+    h5{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        padding: 5px;
+    }
+    p{
+        padding: 0px 5px;
+        color: $paragraphColor;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.trueStory{
+    width: 100%;
+    font-family: $fontSans;
+  
+    .storyContent{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        padding: 10%;
+        h3{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32x;
+        line-height: 32px;
+    }
+    p{
+        color: $paragraphColor;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    button{
+        padding: 10px 36px;
+        width: fit-content;
+        border-radius: 50px;
+    }
+    }
+
+.pstImg{
+    margin: 30px 0px;
+}
+}
+
+
+//Single Page css starts here 
+.singlePost{
+    h4{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 61px;
+    }
+}
