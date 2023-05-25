@@ -35,9 +35,10 @@ header .social svg:hover {
   color: #FE0000;
 }
 header .logo img {
-  width: 80% !important;
+  width: 80%;
 }
 header .menuWrapper {
+  padding: 10px 0px;
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -51,10 +52,12 @@ header .menuWrapper .container {
   justify-content: space-between;
 }
 header .menuWrapper .search {
+  display: inherit;
   padding: 2px;
   border-bottom: 1px solid #EEF8FF;
 }
 header .menuWrapper .search input {
+  width: 100%;
   background: none;
   border: none;
   outline: none;
@@ -74,6 +77,9 @@ header .menuWrapper .search svg {
 .menu {
   font-family: "Work Sans", sans-serif;
 }
+.menu svg {
+  display: none;
+}
 .menu ul {
   margin: 0px;
   padding: 0px;
@@ -82,8 +88,9 @@ header .menuWrapper .search svg {
        column-gap: 36px;
 }
 .menu ul li a {
+  white-space: nowrap;
   font-weight: 500;
-  line-height: 3;
+  line-height: 1.8;
   color: #EEF8FF;
   font-size: 16px;
 }
