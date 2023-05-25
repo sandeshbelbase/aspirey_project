@@ -528,3 +528,109 @@ button{
     }
 }
 
+// category page css 
+
+.categoryWrap{
+    font-family: $fontInter;
+    .categoryTitle{
+        padding: 30px 0px;
+        background-color: #e8eff4;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    
+        h4{
+            color: $blackColor;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        .subtitle{
+        display: flex;
+        column-gap: 20px;
+            h6{
+                color: $blackColor;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                
+            }
+    }
+    .subtitle div:nth-child(2){
+        color: $redColor;
+        h6{
+            color: $redColor;
+        }
+    }
+    
+    }
+
+    .pstImg{
+            img{
+                height: 400px;
+            }
+
+            .imgContent{
+                a{
+                    &:hover{
+                        color: $redColor;
+                    }
+                }
+            }
+    }
+
+}
+
+// maincategory
+.mainCategory{
+    margin: 20px 0px;
+    font-family: $fontInter;
+    a{
+        color: $blackColor;
+        &:hover{
+            transition: 0.5s ease;
+            color: $redColor;
+        }
+    }
+   .mainPost{
+        border: 1px solid #EAEAEA;
+        box-shadow: 6px 12px 24px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 14px;
+    h4{
+        margin: 10px 0px;
+        color: $blackColor;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        
+    }
+    p{
+        margin: 10px 0px;
+        color: $paragraphColor;
+
+    }
+    button{
+        border-radius: 5px;
+    }
+   }
+   .metaSecond{
+        color: $paragraphColor;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid  rgba(170, 187, 187, 0.4);
+        border-top: 1px solid  rgba(170, 187, 187, 0.4);
+        a{
+            color: $paragraphColor;
+            &:hover{
+                    color: $redColor;
+            }
+        }
+    }
+}
