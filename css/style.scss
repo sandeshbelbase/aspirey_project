@@ -626,6 +626,12 @@ button{
         padding: 10px;
         border-bottom: 1px solid  rgba(170, 187, 187, 0.4);
         border-top: 1px solid  rgba(170, 187, 187, 0.4);
+       h4{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+       }
         a{
             color: $paragraphColor;
             &:hover{

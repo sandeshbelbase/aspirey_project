@@ -559,6 +559,12 @@ button:hover {
   border-bottom: 1px solid rgba(170, 187, 187, 0.4);
   border-top: 1px solid rgba(170, 187, 187, 0.4);
 }
+.mainCategory .metaSecond h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
 .mainCategory .metaSecond a {
   color: #655D5D;
 }
