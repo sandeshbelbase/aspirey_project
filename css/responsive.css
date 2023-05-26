@@ -5,6 +5,10 @@
   }
 }
 @media (max-width: 991px) {
+  .menu button:focus {
+    outline: none;
+    box-shadow: none;
+  }
   .menu svg {
     display: block;
     color: #fff;
@@ -12,6 +16,22 @@
   }
   .menu ul {
     display: none !important;
+  }
+  .offcanvas ul {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .offcanvas ul li {
+    padding: 10px 0px;
+    border-bottom: 1px solid #d5d5d5;
+  }
+  .offcanvas ul a {
+    font-size: 22px;
+    color: #FE0000;
   }
   .mainWrapper h3 a {
     font-weight: 600;
@@ -149,5 +169,13 @@
   footer img {
     margin: 10px 0px;
     width: 80%;
+  }
+  .smallPost img {
+    height: 250px;
+  }
+}
+@media (max-width: 491px) {
+  .offcanvas {
+    width: 70% !important;
   }
 }/*# sourceMappingURL=responsive.css.map */
